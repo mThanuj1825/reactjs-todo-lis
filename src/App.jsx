@@ -28,8 +28,8 @@ export default function App() {
 	
 	function handleEditTodo(index) {
 		const valueToBeEdited = todos[index];
+		setTodo(valueToBeEdited);
 		handleDeleteTodo(index);
-		handleAddTodos(valueToBeEdited);
 	}
 	
 	useEffect(() => {
